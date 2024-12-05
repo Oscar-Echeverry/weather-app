@@ -53,7 +53,7 @@ Este proyecto es una **aplicación de clima** desarrollada con **React** como pa
    ```
 
 3. **Configurar la API Key**:
-   - Abre el archivo `WeatherApp.js`.
+   - Abre el archivo `WeatherApp.jsx`.
    - Reemplaza la constante `API_KEY` con tu clave de OpenWeatherMap.
 
 4. **Ejecutar el proyecto**:

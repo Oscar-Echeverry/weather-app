@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://p1.pxfuel.com/preview/850/294/329/the-sky-clouds-blue.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 100px;
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    /* Ajuste del ancho para ser más responsivo */
+    width: 90%;
+    /* Se adapta al tamaño de la pantalla */
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.app-logo {
+    width: 160px;
+    /* Tamaño ajustado para ser más proporcional */
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    margin-bottom: 20px;
+    gap: 5px;
+    /* Espaciado uniforme entre los elementos */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 60%;
+    /* Más responsivo */
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+    /* Redondea el input */
+    outline: none;
+    transition: all 0.3s;
+    /* Efecto suave al interactuar */
+}
+
+input[type="text"]:focus {
+    border-color: #005bb5;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Redondear bordes */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Efecto suave */
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+    /* Agrandar ligeramente */
+}
+
+button#UbicacionBoton {
+    margin-left: 0;
+    /* Quitar márgenes innecesarios */
+}
+
+.Resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px;
+    background-color: rgba(212, 255, 0, 0.9);
+    border: 2px solid #0072ff;
+    border-radius: 10px;
+    /* Suavizar bordes */
+}
+
+.Resultado.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    /* Animación suave */
+}
+
+.Resultado.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+canvas {
+    margin-top: 30px;
+    display: block;
+    max-width: 100%;
+    /* Escalable */
+    height: auto;
+    /* Mantiene proporción */
+}
+
+#forecastContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Soporte responsivo */
+    gap: 15px;
+    /* Espaciado entre los elementos */
+}
+
+.forecast-item {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    /* Ajuste de tamaño para mayor claridad */
+}
+
+.forecast-item img {
+    width: 60px;
+    /* Ajustado para una mejor visibilidad */
+    height: 60px;
+}
